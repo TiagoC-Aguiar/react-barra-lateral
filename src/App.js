@@ -6,8 +6,9 @@ import Blog from './pages/Blog'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
 import Portfolio from './pages/Portfolio'
-import RespnosiveNavigation from './components/ResonsiveNavigation'
+import ResponsiveNavigation from './components/ResponsiveNavigation'
 
+import logo from './logo.svg'
 import './App.css'
 
 function App() {
@@ -35,19 +36,19 @@ function App() {
   ]
   return (
     <div className="App">
-      <RespnosiveNavigation 
+      <ResponsiveNavigation 
         navLinks={navLinks}
-        logo={'logo'}
+        logo={logo}
       />
       <Router>
-        <Contact path="/contact/" />
-        <Home path="/home/" />
-        <Portfolio path="/portfolio/" />
-        <Blog path="/blog/" />
-        <About path="/about/" />
+        <Contact path="/contact" />
+        <Home path="/home" />
+        <Portfolio path="/portfolio" />
+        <Blog path="/blog" />
+        <About path="/about" />
       </Router>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
