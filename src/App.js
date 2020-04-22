@@ -14,6 +14,11 @@ import './App.css'
 function App() {
   const navLinks = [
     {
+      text: 'Home',
+      path: '/',
+      icon: 'ion-ios-home'
+    },
+    {
       text: 'Contact',
       path: '/contact',
       icon: 'ion-ios-megaphone'
@@ -39,6 +44,9 @@ function App() {
       <ResponsiveNavigation 
         navLinks={navLinks}
         logo={logo}
+        // background="#fff"
+        // hoverBackground="#ddd"
+        // linkColor="#777"
       />
       <Router>
         <Contact path="/contact" />
